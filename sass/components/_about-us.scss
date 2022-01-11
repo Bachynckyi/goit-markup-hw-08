@@ -1,0 +1,55 @@
+/* ------------------ABOUT US ------------ */
+
+.about-us__list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.about-us__title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text-nav);
+}
+
+.about-us__list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__contact-list {
+  margin-top: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.about-us__box {
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--color-but-add);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us__item {
+  position: relative;
+}
+
+
+
+
+
+

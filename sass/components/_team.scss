@@ -1,0 +1,101 @@
+/* ------------OUR TEAM----------- */
+.team__item {
+  width: 270px;
+  background-color: var(--color-but-add);
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__list {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team__icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px 0px 32px;
+}
+.team__icons-item + .team__icons-item {
+  margin-left: 10px;
+}
+.team__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* CSS-переход */
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-delay: 0ms;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+  }
+}
+
+.team__links .team__icons {
+  fill: var(--color-icons);
+  /* CSS-переход */
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-delay: 0ms;
+}
+
+.team__links:hover .team__icons,
+.team__links:focus .team__icons {
+  fill: var(--color-but-add);
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.12;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text-nav);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.team {
+  background-color: var(--background-buttons);
+}
+
+.team__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: var(--color-text-nav);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.team__position {
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}

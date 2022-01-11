@@ -1,0 +1,50 @@
+:root {
+  /* Цвет основного текста */
+  --main-text-color: #757575;
+  /* Цвет текста навигаций */
+  --color-text-nav: #212121;
+  /* Цвет акцента */
+  --color-accent: #2196f3;
+  /* Цвет основого фона */
+  --background-color-main: #e5e5e5;
+  /* Цвет фона футера и раздела заказа */
+  --background-color: #2f303a;
+  /* Цвет фона кнопок */
+  --background-buttons: #f5f4fa;
+  /* цвет кнопок и адреса */
+  --color-but-add: #fff;
+
+  --color-icons: #afb1b8;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --logo-font: Raleway, sans-serif;
+
+  --main-font: Roboto, sans-serif;
+
+  --hover-button: #188ce8;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

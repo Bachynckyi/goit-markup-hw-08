@@ -1,0 +1,140 @@
+/*--------------------- HEADER ---------------------------*/
+
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.logolink {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logolink__constanta {
+  color: var(--color-accent);
+}
+.logolink__header {
+  color: #000;
+}
+
+.logolink__footer {
+  color: var(--color-but-add);
+}
+
+.flexbox {
+  display: flex;
+}
+
+.navigation,
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav {
+  display: flex;
+  margin-left: 93px;
+  padding-left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.menu-nav__link {
+  position: relative;
+}
+.menu-nav .menu-nav__current::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-accent);
+  position: absolute;
+  bottom: -1px;
+  border-radius: 2px;
+  color: var(--color-accent);
+}
+
+.menu-nav .menu-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+.menu-nav .menu-nav__link {
+  display: block;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--color-text-nav);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-delay: 0ms;
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}
+
+.menu-nav .menu-nav__current {
+  color: var(--color-accent);
+}
+
+.contacts {
+  margin-left: auto;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.contacts__icons {
+  margin-right: 10px;
+}
+.contacts .contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+
+  &:hover .contacts__icons,
+  &:focus .contacts__icons {
+    fill: var(--color-accent);
+  }
+}
+.contacts .contacts__link,
+.footer .contacts-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--main-text-color);
+  /* CSS-переход */
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-delay: 0ms;
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}
+
+.contacts__icons {
+  fill: var(--main-text-color);
+  /* CSS-переход */
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-delay: 0ms;
+}
