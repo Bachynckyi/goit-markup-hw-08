@@ -1,22 +1,57 @@
 /* ------------OUR TEAM----------- */
 .team__item {
-  width: 270px;
+  width: 450px;
   background-color: var(--color-but-add);
   border: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and(min-width:768px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+  }
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
 }
 
-.team__list {
+.team .team__item:nth-child(-n + 2) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+.team .team__item:nth-child(odd) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 30px;
+  }
+}
+
+.team .team__list {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+
+  @media screen and(min-width:768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .team__icons-list {
@@ -69,7 +104,11 @@
   letter-spacing: 0.03em;
   color: var(--color-text-nav);
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .team {

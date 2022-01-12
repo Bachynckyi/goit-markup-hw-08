@@ -48,8 +48,10 @@
   position: relative;
 }
 
+.about-us {
+  display: none;
 
-
-
-
-
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}

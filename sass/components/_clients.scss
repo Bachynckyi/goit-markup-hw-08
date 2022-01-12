@@ -7,17 +7,58 @@
   text-align: center;
   letter-spacing: 1.17;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .client__list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
 }
 
 .client__item + .client__item {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.client__item:nth-child(odd) {
+  margin-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+  }
+}
+
+.client__item:nth-child(-n + 4) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+.client__item:nth-child(-n + 3) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+.client__item:nth-child(3n + 1) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 30px;
+  }
+}
+
+.client__item:nth-child(3n + 2) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 30px;
+  }
 }
 
 .client__icon {
@@ -34,7 +75,7 @@
 }
 
 .client__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--color-icons);
   border-radius: 4px;
@@ -43,6 +84,17 @@
   transition-duration: 250ms;
   transition-timing-function: var;
   transition-delay: 0ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and(min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {
