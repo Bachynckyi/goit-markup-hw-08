@@ -7,7 +7,6 @@
   }
 }
 .portfolio__link .portfolio__card {
-  /* CSS-переход */
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
@@ -52,8 +51,15 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
 }
 
 .portfolio__list .portfolio__title {
@@ -81,15 +87,19 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
-.portfolio__item {
-  margin-right: 30px;
+.portfolio__item:not(:last-child) {
   margin-bottom: 30px;
+  // margin-right: 30px;
 }
 
-.portfolio__item:nth-child(3n) {
-  margin-right: 0px;
-}
+// .portfolio__item:nth-child(3n) {
+//   margin-right: 0px;
+// }
 
 .hidden {
   display: none;
+}
+
+.portfolio__card {
+  width: 450px;
 }
