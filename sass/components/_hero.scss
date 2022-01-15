@@ -14,7 +14,6 @@
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -23,6 +22,11 @@
   margin-bottom: 0px;
   margin-top: 0px;
   padding-bottom: 30px;
+  font-size: 26px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 
 .hero__button-open {
@@ -63,6 +67,12 @@
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
   transition-delay: 0ms;
+  padding: 93px 15px 94px 15px;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 208px 159px 207px 159px;
+  }
 }
 .hero__backdrop.is-hidden {
   opacity: 0;
