@@ -218,3 +218,11 @@ textarea {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
+
+.modal__input input:focus-within label .modal__form-name {
+  color: red;
+}
+
+// label .modal__form-name {
+//   color: red;
+// }

@@ -176,7 +176,7 @@
   background-color: var(--color-but-add);
   margin: 0px;
   padding: 0px;
-  z-index: 1;
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -207,6 +207,7 @@
 
   &.is-open {
     display: block;
+    z-index: 1;
   }
 
   @media screen and (min-width: 768px) {

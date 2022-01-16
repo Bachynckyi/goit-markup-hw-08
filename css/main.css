@@ -314,7 +314,7 @@ img {
   background-color: var(--color-but-add);
   margin: 0px;
   padding: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -348,6 +348,7 @@ img {
 
 .header__menu-container.is-open {
   display: block;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -1730,6 +1731,10 @@ textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+
+.modal__input input:focus-within label .modal__form-name {
+  color: red;
 }
 
 /* -----------------Buttons -------------------------------*/
