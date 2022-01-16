@@ -2043,7 +2043,7 @@ textarea {
 }
 
 .portfolio__card {
-  width: 450px;
+  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) {
