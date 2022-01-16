@@ -176,6 +176,7 @@
   background-color: var(--color-but-add);
   margin: 0px;
   padding: 0px;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -201,7 +202,7 @@
   width: 100%;
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 0%;
   height: 796px;
 
   &.is-open {
@@ -229,7 +230,11 @@
   }
 }
 
-.mob-navigation:not(:last-child) {
+.mob-items:first-child {
+  margin-top: 48px;
+}
+
+.mob-items:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -282,6 +287,9 @@
   margin-bottom: 32px;
 }
 
-// .header__menu:focus .icon-menu {
-//   fill: var(--color-accent);
-// }
+.header__menu:focus .icon-menu,
+.header__menu:hover .icon-menu,
+.header__menu:focus .icon-close,
+.header__menu:hover .icon-close {
+  fill: var(--color-accent);
+}
