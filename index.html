@@ -220,11 +220,16 @@
         <h2 class=team__title>Наша команда</h2>
         <ul class="team__list list">
             <li class="team__item"> 
-                <img src="./images/product_designer.jpg"
-                alt="Продукт-дизайнер"
-                width="270"
-                height="260"
-                />
+                <picture>
+                    <source srcset="./images/product_designer/product_designer1200@1x.jpg 1x, 
+                    ./images/product_designer/product_designer1200@2x.jpg 2x" media="(min-width: 1200px)"/>
+                    <source srcset="./images/product_designer/product_designer768@1x.jpg 1x, 
+                    ./images/product_designer/product_designer768@2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/product_designer/product_designer480@1x.jpg 1x, 
+                    ./images/product_designer/product_designer480@2x.jpg 2x" media="(min-width: 480px)"/>
+                    <img src="./images/product_designer/product_designer480@1x.jpg"
+                    alt="Продукт-дизайнер" />
+                </picture>
                 <div class="team__box">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p class="team__position">Product Designer</p>
@@ -259,11 +264,15 @@
                 </div>
             </li>
             <li class="team__item">
-                <img src="./images/frontend_developer.jpg" 
-                alt="Фронтенд разработчик" 
-                width="270" 
-                height="260" 
-                />
+                <picture>
+                    <source srcset="./images/frontend_developer/frontend_developer1200@1x.jpg 1x, 
+                    ./images/frontend_developer/frontend_developer1200@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/frontend_developer/frontend_developer768@1x.jpg 1x, 
+                    ./images/frontend_developer/frontend_developer768@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/frontend_developer/frontend_developer480@1x.jpg 1x, 
+                    ./images/frontend_developer/frontend_developer480@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/frontend_developer/frontend_developer480@1x.jpg" alt="Фронтенд разработчик" />
+                </picture>
                 <div class="team__box">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p class="team__position">Frontend Developer</p>
@@ -296,11 +305,15 @@
                 </div>
             </li>
             <li class="team__item">
-                <img src="./images/marketing.jpg" 
-                alt="Маркетинг" 
-                width="270" 
-                height="260" 
-                />
+                <picture>
+                    <source srcset="./images/marketing/marketing1200@1x.jpg 1x, 
+                    ./images/marketing/marketing1200@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/marketing/marketing768@1x.jpg 1x, 
+                    ./images/marketing/marketing768@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/marketing/marketing480@1x.jpg 1x, 
+                    ./images/marketing/marketing480@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/marketing/marketing480@1x.jpg" alt="Маркетинг" />
+                </picture>
                 <div class="team__box">
                     <h3 class="team__name">Николай Тарасов</h3>
                     <p class="team__position">Marketing</p>
@@ -333,10 +346,15 @@
                 </div>
             </li>
             <li class="team__item">
-                <img src="./images/designer_ui.jpg" 
-                alt="UI дизайнер" 
-                width="270" 
-                height="260" />
+                <picture>
+                    <source srcset="./images/designer_ui/designer_ui1200@1x.jpg 1x, 
+                    ./images/designer_ui/designer_ui1200@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/designer_ui/designer_ui768@1x.jpg 1x, 
+                    ./images/designer_ui/designer_ui768@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/designer_ui/designer_ui480@1x.jpg 1x, 
+                    ./images/designer_ui/designer_ui480@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/designer_ui/designer_ui480@1x.jpg" alt="UI дизайнер" />
+                </picture>
                 <div class="team__box">
                     <h3 class="team__name   ">Михаил Ермаков</h3>
                     <p class="team__position">UI Designer</p>
@@ -487,6 +505,6 @@
                 </div>
             </footer>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

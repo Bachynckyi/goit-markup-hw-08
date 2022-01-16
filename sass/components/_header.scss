@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .navigation,
@@ -176,7 +177,7 @@
   background-color: var(--color-but-add);
   margin: 0px;
   padding: 0px;
-  z-index: 2;
+  z-index: 3;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -200,7 +201,7 @@
   background-color: var(--color-but-add);
   padding: 0px 15px 48px 40px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0%;
   height: 796px;
@@ -246,7 +247,6 @@
   line-height: 40px;
   letter-spacing: 0.02em;
   color: var(--color-accent);
-  margin-top: 302px;
 }
 
 .mail-contacts {
@@ -284,7 +284,7 @@
 }
 
 .mob-item {
-  margin-top: 302px;
+  margin-top: 102px;
   margin-bottom: 32px;
 }
 
