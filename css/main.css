@@ -1397,7 +1397,7 @@ img {
 }
 
 .footer__mailing-input input {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   background: var(--background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1407,6 +1407,12 @@ img {
   padding-left: 16px;
   color: var(--color-but-add);
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__mailing-input input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
