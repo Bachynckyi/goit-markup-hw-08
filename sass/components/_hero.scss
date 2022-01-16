@@ -99,7 +99,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 3;
   opacity: 1;
   transition: opacity;
   transition-duration: 250ms;
@@ -115,6 +115,7 @@
 .hero__backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .hero__backdrop.is-hidden .modal {
