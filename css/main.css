@@ -1122,7 +1122,7 @@ img {
 }
 
 .client__link {
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid var(--color-icons);
   border-radius: 4px;
