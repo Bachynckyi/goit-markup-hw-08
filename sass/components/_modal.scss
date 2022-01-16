@@ -60,9 +60,9 @@ textarea {
 }
 
 .modal__form {
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .modal__form input {
@@ -75,6 +75,8 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
   transition-delay: 0ms;
+  margin-bottom: 28px;
+  margin-top: 4px;
 
   &:focus {
     border: 1px solid var(--color-accent);
@@ -83,7 +85,8 @@ textarea {
 }
 
 .modal__form label {
-  margin-bottom: 4px;
+  position: absolute;
+  top: -17px;
 }
 
 .modal__checkbox label {
@@ -93,7 +96,6 @@ textarea {
 }
 
 .modal__checkbox-input {
-  // visibility: hidden;
   display: none;
 }
 
@@ -193,7 +195,7 @@ textarea {
 
 .modal__icons {
   position: absolute;
-  top: 11px;
+  top: 15px;
   left: 12px;
   fill: var(--color-text-nav);
   transition-property: fill;
@@ -219,10 +221,8 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-.modal__input input:focus-within label .modal__form-name {
-  color: red;
+.modal__input input:focus-within ~ label {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    color: var(--color-accent);
+  }
 }
-
-// label .modal__form-name {
-//   color: red;
-// }

@@ -1508,7 +1508,6 @@ textarea {
 }
 
 .modal__form {
-  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1516,6 +1515,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .modal__form input {
@@ -1532,6 +1532,8 @@ textarea {
           transition-timing-function: var(--timing-function);
   -webkit-transition-delay: 0ms;
           transition-delay: 0ms;
+  margin-bottom: 28px;
+  margin-top: 4px;
 }
 
 .modal__form input:focus {
@@ -1540,7 +1542,8 @@ textarea {
 }
 
 .modal__form label {
-  margin-bottom: 4px;
+  position: absolute;
+  top: -17px;
 }
 
 .modal__checkbox label {
@@ -1698,7 +1701,7 @@ textarea {
 
 .modal__icons {
   position: absolute;
-  top: 11px;
+  top: 15px;
   left: 12px;
   fill: var(--color-text-nav);
   -webkit-transition-property: fill;
@@ -1733,8 +1736,10 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-.modal__input input:focus-within label .modal__form-name {
-  color: red;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal__input input:focus-within ~ label {
+    color: var(--color-accent);
+  }
 }
 
 /* -----------------Buttons -------------------------------*/
