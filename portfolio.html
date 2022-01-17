@@ -15,16 +15,20 @@
         <header class="header">
             <div class="container">
                 <div class="flexbox">
-                    <a class="logolink is-open" href="./index.html"><span class="logolink__constanta">Web</span><span
+                    <a class="logolink" href="./index.html"><span class="logolink__constanta">Web</span><span
                             class="logolink__header">Studio</span></a>
-                    <button type="button" class="header__menu is-open" aria-expanded="false" data-menu-button>
-                        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню"
-                            aria-controls="menu-container">
-                            <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                    <button class="menu__button-open">
+                        <svg width="24px" height="16px" aria-label="Переключатель мобильного меню">
                             <use class="icon-menu" href="./images/icons.svg#menu"></use>
                         </svg>
                     </button>
-                    <div class="header__menu-container" id="menu-container" data-menu>
+                    <div class="menu is-hidden">
+                        <button class="menu__button-close">
+                            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню"
+                                aria-controls="menu-container">
+                                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
                         <div class="menu-mobile-navigation">
                             <ul class="list">
                                 <li class="mob-items"><a class="mob-navigation" href="./index.html">Студия</a></li>
@@ -33,11 +37,12 @@
                             </ul>
                         </div>
                         <div class="menu-mobile-contacts">
-                            <ul class="list">
-                                <li class="mob-item"><a class="mob-contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                                <li class="web-item"><a class="mail-contacts"
-                                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            </ul>
+                            <div>
+                                <a class="mob-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </div>
+                            <div>
+                                <a class="mail-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </div>
                             <ul class="web-list list">
                                 <li class="web-items"><a class="web-contacts" href="https://www.instagram.com">Instagram</a>
                                 <li class="web-items"><a class="web-contacts" href="https://twitter.com">Twitter</a>
@@ -48,9 +53,9 @@
                     </div>
                     <nav class="navigation">
                         <ul class="menu-nav list">
-                            <li class="menu-nav__item"><a class="menu-nav__link"
+                            <li class="menu-nav__item"><a class="menu-nav__link menu-nav__current"
                                     href="./index.html">Студия</a></li>
-                            <li class="menu-nav__item"><a class="menu-nav__link menu-nav__current" href="./portfolio.html">Портфолио</a></li>
+                            <li class="menu-nav__item"><a class="menu-nav__link" href="./portfolio.html">Портфолио</a></li>
                             <li class="menu-nav__item"><a class="menu-nav__link" href="Контакты">Контакты</a></li>
                         </ul>
                     </nav>
@@ -70,7 +75,7 @@
                     </ul>
                 </div>
             </div>
-        </header>
+    </header>
 
     <main>
         <section class="portfolio section">

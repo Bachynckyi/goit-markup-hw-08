@@ -21,6 +21,7 @@
 .portfolio__card-actions {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .portfolio__card-text {

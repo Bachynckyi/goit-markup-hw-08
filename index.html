@@ -16,15 +16,14 @@
                 <div class="container">
                     <div class="flexbox">
                         <a class="logolink" href="./index.html"><span class="logolink__constanta">Web</span><span class="logolink__header">Studio</span></a>
-                        <button type="button" class="header__menu is-open" aria-expanded="false" data-menu-button>
+                        <button class="menu__button-open">
                             <svg width="24px" height="16px" 
-                                aria-label="Переключатель мобильного меню"
-                                aria-controls="menu-container">
+                                aria-label="Переключатель мобильного меню">
                                 <use class="icon-menu" href="./images/icons.svg#menu"></use>
                             </svg>
                         </button>
-                        <div class="header__menu-container" id="menu-container" data-menu>
-                            <button type="button" class="header__menu-close" aria-expanded="false" data-menu-button>
+                        <div class="menu is-hidden">
+                            <button class="menu__button-close">
                                 <svg width="40px" height="40px" aria-label="Переключатель мобильного меню" aria-controls="menu-container">
                                     <use class="icon-close" href="./images/icons.svg#icon-close"></use>
                                 </svg>
@@ -37,15 +36,17 @@
                                     </ul>
                                 </div>
                             <div class="menu-mobile-contacts">
-                                    <ul class="list">
-                                    <li class="mob-item"><a class="mob-contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                                    <li class="web-item"><a class="mail-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                                    </ul>
+                                    <div>
+                                        <a class="mob-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+                                    </div>
+                                    <div>
+                                        <a class="mail-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                    </div>                                
                                     <ul class="web-list list">
-                                    <li class="web-items"><a class="web-contacts" href="https://www.instagram.com">Instagram</a>
-                                    <li class="web-items"><a class="web-contacts" href="https://twitter.com">Twitter</a>
-                                    <li class="web-items"><a class="web-contacts" href="https://www.facebook.com">Facebook</a>
-                                    <li class="web-items"><a class="web-contacts" href="https://linkedin.com/">Linkedln</a>
+                                        <li class="web-items"><a class="web-contacts" href="https://www.instagram.com">Instagram</a>
+                                        <li class="web-items"><a class="web-contacts" href="https://twitter.com">Twitter</a>
+                                        <li class="web-items"><a class="web-contacts" href="https://www.facebook.com">Facebook</a>
+                                        <li class="web-items"><a class="web-contacts" href="https://linkedin.com/">Linkedln</a>
                                     </ul>
                             </div>
                         </div>
