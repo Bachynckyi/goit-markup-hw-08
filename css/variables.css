@@ -45,19 +45,16 @@ img {
   padding-right: 15px;
   max-width: 320px;
 }
-
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -68,11 +65,9 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 @media (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-}
-/*# sourceMappingURL=variables.css.map */
+}/*# sourceMappingURL=variables.css.map */

@@ -5,10 +5,20 @@
     menu: document.querySelector('.menu'),
   };
 
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.openMenuBtn.addEventListener('click', openMenu);
+  refs.closeMenuBtn.addEventListener('click', closeMenu);
 
-  function toggleMenu() {
-    refs.menu.classList.toggle('is-hidden');
+  function openMenu() {
+    refs.menu.classList.remove('is-hidden');
+    window.addEventListener('scroll', cancelScroll);
+  }
+
+  function closeMenu() {
+    refs.menu.classList.add('is-hidden');
+    window.removeEventListener('scroll', cancelScroll);
+  }
+
+  function cancelScroll() {
+    window.scrollTo(0,0);
   }
 })();
